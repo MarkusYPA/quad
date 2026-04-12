@@ -9,4 +9,8 @@ func main() {
 	piscine.QuadB(1, 5)
 
 	piscine.QuadC(5, 3)
+
+	piscine.QuadD(5, 3)
+
+	piscine.QuadE(5, 3)
 }
