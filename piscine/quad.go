@@ -71,11 +71,14 @@ func QuadE(x, y int) {
 }
 
 func getQuad(x, y int, characters map[string]rune) string {
+	if x*y == 0 {
+		return ""
+	}
+
 	var quad strings.Builder
 
 	for row := range y {
 		for col := range x {
-
 			switch {
 			case row == 0 && col == 0:
 				quad.WriteRune(characters["topLeft"])
