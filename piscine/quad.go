@@ -71,7 +71,7 @@ func QuadE(x, y int) {
 }
 
 func getQuad(x, y int, characters map[string]rune) string {
-	if x*y == 0 {
+	if x <= 0 || y <= 0 {
 		return ""
 	}
 
